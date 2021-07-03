@@ -38,7 +38,7 @@ class ProductController extends Controller
                 "description" => $request->get("desc"),
                 "category_id" => $request->get("category_id")
             ]);
-            return redirect()->to("products");
+            return redirect()->to("admin/products");
         } catch (\Exception $e) {
             abort(404);
         }
@@ -48,7 +48,7 @@ class ProductController extends Controller
         $product= Product::findOrFail($id);// neu ko tim dc se sang 404
         try {
             $product->delete();
-            return redirect()->to("products");
+            return redirect()->to("admin/products");
         }catch (\Exception $e){
             abort(404);
         }
@@ -69,7 +69,7 @@ class ProductController extends Controller
                 "description"=>$request ->get("desc_edit"),
 
             ]);
-            return redirect()->to("/products");
+            return redirect()->to("admin/products");
 
         }catch (\Exception $e){
             abort(404);

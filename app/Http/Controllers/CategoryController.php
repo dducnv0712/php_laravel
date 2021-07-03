@@ -24,7 +24,7 @@ class CategoryController extends Controller
             Category::create([
                 "name"=>$request->get("name")
             ]);
-            return redirect()->to("/categories");
+            return redirect()->to("admin/categories");
         }catch (\Exception $e){
             abort(404);
         }
@@ -35,7 +35,7 @@ class CategoryController extends Controller
         $category = Category::findOrFail($id);// neu ko tim dc se sang 404
         try {
             $category->delete();
-            return redirect()->to("categories");
+            return redirect()->to("admin/categories");
         }catch (\Exception $e){
             abort(404);
         }
@@ -48,7 +48,7 @@ class CategoryController extends Controller
             $category->update([
                 "name"=>$request ->get("name_edit"),
             ]);
-            return redirect()->to("/categories");
+            return redirect()->to("admin/categories");
         }catch (\Exception $e){
             abort(404);
         }

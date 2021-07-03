@@ -1,0 +1,22 @@
+.imgProductView{
+    width:70px;
+    height:70px;
+    object-fit: contain;
+}
+.desc{
+    width:150px;
+    height:100px;
+    overflow-y: auto;
+
+}
+.desc::-webkit-scrollbar {
+    width:7px;
+    background: #e5e3e3;
+
+
+}
+
+.desc::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius:40px;
+}

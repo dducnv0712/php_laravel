@@ -23,7 +23,7 @@ class BrandController extends Controller
                 "logo"=>$request->get("imgLogo"),
                 "name"=>$request->get("name")
             ]);
-            return redirect()->to("/brands");
+            return redirect()->to("admin/brands");
         }catch (\Exception $e){
             abort(404);
         }
@@ -48,7 +48,7 @@ class BrandController extends Controller
                 "logo"=>$request ->get("imgLogo"),
                 "name"=>$request ->get("name_edit"),
             ]);
-            return redirect()->to("/brands");
+            return redirect()->to("admin/brands");
         }catch (\Exception $e){
             abort(404);
         }
