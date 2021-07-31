@@ -4,7 +4,7 @@
 <body>
 
 <!-- Navbar -->
-<x-navu></x-navu>
+{{--<x-navu></x-navu>--}}
 <!-- Navbar -->
 
 <!--Carousel Wrapper-->
@@ -21,7 +21,7 @@
 <!--Main layout-->
 
 <!--Footer-->
-<x-footeru></x-footeru>
+{{--<x-footeru></x-footeru>--}}
 <!--/.Footer-->
 
 <!-- SCRIPTS -->

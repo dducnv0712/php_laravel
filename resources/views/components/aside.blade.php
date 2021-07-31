@@ -13,7 +13,7 @@
                 <img class="rounded-circle" src="{{asset('upload/party_blob.gif')}}" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">{{Auth::user()->name}}</a>
+                <a href="#" class="d-block">Admin</a>
             </div>
         </div>
 
@@ -45,45 +45,45 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{"/admin/categories"}}" class="nav-link">
+                    <a href="{{"/admin/feedback"}}" class="nav-link">
                         <i class="nav-icon fas fa-list-alt"></i>
                         <p>
-                           Categories List
+                           Feedback
                         </p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="{{"/admin/brands"}}" class="nav-link">
-                        <i class="nav-icon fas fa-copyright"></i>
-                        <p>
-                            Brands List
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{"/admin/products"}}" class="nav-link">
-                        <i class="fas nav-icon fa-th-list"></i>                        <p>
-                            Products List
-                        </p>
-                    </a>
-                </li>
+{{--                <li class="nav-item">--}}
+{{--                    <a href="{{"/admin/brands"}}" class="nav-link">--}}
+{{--                        <i class="nav-icon fas fa-copyright"></i>--}}
+{{--                        <p>--}}
+{{--                            Brands List--}}
+{{--                        </p>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
+{{--                <li class="nav-item">--}}
+{{--                    <a href="{{"/admin/products"}}" class="nav-link">--}}
+{{--                        <i class="fas nav-icon fa-th-list"></i>                        <p>--}}
+{{--                            Products List--}}
+{{--                        </p>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
 
-                <li class="nav-item">
-                    <a href="{{url("/admin/about-us")}}" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
-                        <p>
-                            About Us
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{url("/cart")}}" class="nav-link">
-                        <i class="nav-icon fas fa-shopping-cart"></i>
-                        <p>
-                            Cart
-                        </p>
-                    </a>
-                </li>
+{{--                <li class="nav-item">--}}
+{{--                    <a href="{{url("/admin/about-us")}}" class="nav-link">--}}
+{{--                        <i class="nav-icon fas fa-users"></i>--}}
+{{--                        <p>--}}
+{{--                            About Us--}}
+{{--                        </p>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
+{{--                <li class="nav-item">--}}
+{{--                    <a href="{{url("/cart")}}" class="nav-link">--}}
+{{--                        <i class="nav-icon fas fa-shopping-cart"></i>--}}
+{{--                        <p>--}}
+{{--                            Cart--}}
+{{--                        </p>--}}
+{{--                    </a>--}}
+{{--                </li>--}}
 
 
             </ul>
