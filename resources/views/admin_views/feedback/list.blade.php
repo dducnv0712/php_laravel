@@ -4,12 +4,10 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-3">Categories</h1>
+                <h1 class="m-3">Feedback</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
-                <div class="float-sm-right m-3">
-                    <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#add-product" >New Categories</button>
-                </div>
+
             </div><!-- /.col -->
         </div><!-- /.row -->
     </div><!-- /.container-fluid -->
