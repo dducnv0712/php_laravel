@@ -17,8 +17,8 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 //        Category::factory(300)->create();
-        Product::factory(500)->create();
-//         Brand::factory(500)->create();
+        Product::factory(300)->create();
+//         Brand::factory(300)->create();
 //php artisan db:seed
     }
 }

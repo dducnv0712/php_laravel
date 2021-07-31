@@ -17,7 +17,7 @@ class ProductController extends Controller
 //        $brands = Brand::all();
 
         $num = 1;
-        return view("product.list",[
+        return view("admin_views.product.list",[
             "products"=>$products,
 //            "brands"=>$brands,
             "num" =>$num
@@ -82,7 +82,7 @@ class ProductController extends Controller
         //nó sẽ lấy ra sản phẩm của category đã chọn
         $products = Product::With("Category","Brand")->Where("category_id",$id)->get();
         $num = 1;
-        return view("product.list",[
+        return view("admin_views.product.list",[
             "products"=>$products,
             "num" =>$num
         ]);
@@ -92,7 +92,7 @@ class ProductController extends Controller
         $products = Product::With("Category","Brand")->Where("brand_id",$id)->get();
 
         $num = 1;
-        return view("product.list",[
+        return view("admin_views.product.list",[
             "products"=>$products,
             "num" =>$num
         ]);

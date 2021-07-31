@@ -10,7 +10,7 @@ class BrandController extends Controller
     public function all(){
         $brands = Brand::all();
         $num = 1;
-        return view("brand.list",[
+        return view("admin_views.brand.list",[
             "brands"=>$brands,
             "num"=>$num
         ]);

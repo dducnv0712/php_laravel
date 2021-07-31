@@ -28,7 +28,10 @@ class CreateTableCategory  extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->id(); //tạo khóa chính là id kiểu dữ liệu big int 20 auto increment
             $table->string("name");
+            $table->unsignedBigInteger("brand_id");
             $table->timestamps();
+            $table->foreign("brand_id")->references("id")->on("brands");
+
 
         });
     }

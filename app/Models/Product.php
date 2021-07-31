@@ -20,6 +20,9 @@ class Product extends Model
         "qty",
         "category_id"
     ];
+    /**
+     * @var mixed
+     */
 
     public function Category(){
 //        return $this->belongsTo(Category::class,"category_id","id");

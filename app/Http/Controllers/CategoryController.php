@@ -11,7 +11,7 @@ class CategoryController extends Controller
     public function all(){
         $categories = Category::all(); // tra ve 1 list object
         $num = 1;
-        return view("category.list",[
+        return view("admin_views.category.list",[
             "categories"=>$categories,
             "num" =>$num
         ]);

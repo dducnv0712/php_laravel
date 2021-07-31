@@ -26,7 +26,7 @@ class ProductFactory extends Factory
             "name"=>$this->faker->name(),
             "image"=>$this->faker->imageUrl(),
             "description" =>$this->faker->text(200),
-            "brand_id"=>random_int(1,500),
+            "brand_id"=>random_int(1,300),
             "price"=>random_int(0,5000),
             "qty"=>random_int(0,100),
             "category_id"=>random_int(1,300)
