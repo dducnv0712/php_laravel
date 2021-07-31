@@ -1,5 +1,5 @@
 @extends("admin_views.layout")
-@section("page_title","Categories")
+@section("page_title","Feedback")
 @section("main")
     <div class="container-fluid">
         <div class="row mb-2">
