@@ -17,17 +17,16 @@ class FeedbackController extends Controller
     }
     public function feedback(Request $request)
     {
-        try{
-            Feedback::create([
+
+
+                Feedback::create([
                 "name"=>$request->get("name"),
                 "phone"=>$request->get("phone"),
                 "email"=>$request->get("email"),
                 "feedback"=>$request->get("feedback")
             ]);
-            return redirect()->to("/success");
-        }catch (\Exception $e){
-            return redirect()->to("/fail");
-        }
+
+
 
     }
 

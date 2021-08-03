@@ -4,10 +4,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Feedback</title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="stylesheet" href="{{asset("plugins/bootstrap-5.0.1-dist/css/bootstrap.min.css")}}">
-{{--        <!-- Bootstrap core CSS -->--}}
+{{--    <link rel="stylesheet" href="{{asset("plugins/sweetalert2/sweetalert2.min.css")}}">--}}
+    <link rel="stylesheet" href="{{asset("css/sweetalert.css")}}">
+
+
+    {{--        <!-- Bootstrap core CSS -->--}}
 {{--    <link href="{{asset('user_public/css/bootstrap.min.css')}}" rel="stylesheet">--}}
 {{--    <!-- Material Design Bootstrap -->--}}
 {{--    <link href="{{asset('user_public/css/mdb.min.css')}}" rel="stylesheet">--}}

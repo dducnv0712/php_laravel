@@ -5,50 +5,38 @@
 {{--<!-- Bootstrap tooltips -->--}}
 {{--<script type="text/javascript" src="{{asset('user_public/js/popper.min.js')}}"></script>--}}
 {{--<!-- Bootstrap core JavaScript -->--}}
-<script type="text/javascript" src="{{asset('user_public/js/bootstrap.min.js')}}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" type="text/javascript" charset="utf-8" async defer></script>
-<script type="text/javascript" charset="utf-8">
-    $.ajaxSetup({
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        }
-    });
-</script>
+{{--<script type="text/javascript" src="{{asset('user_public/js/bootstrap.min.js')}}"></script>--}}
+<script type="text/javascript" src="{{asset('js/sweetalert.min.js')}}"></script>
 <script type="text/javascript">
-    $(document).ready(function (){
-        $('#form').submit(function (){
-            e.preventDefault();
-            var url =$(this).attr('data-url');
-            var name =$("#name").val();
-            var phone =$("#phone").val();
-            var email =$("#email").val();
-            var feedback =$("#feedback").val();
+    $(document).ready(function(){
+        $('#submit').click(function (){
+            var name = $('.name').val();
+            var phone = $('.phone').val();
+            var email = $('.email').val();
+            var feedback = $('.feedback').val();
+            var _token = $('input[name="_token"]').val();
 
-            $.ajax(
-                {
-                    url:url,
-                    type:'POST',
-                    data:{
-                        name:name,
-                        emai:email,
-                        phone:phone,
-                        feedback:feedback
+            $.ajax({
+                url:"{{url('/submit')}}",
+                method:'POST',
+                data:{name:name,phone:phone,email:email,feedback:feedback,_token:_token},
+                success:function (data){
+                    swal("Hey, Good job !!","You clicked the button !!","success")
 
-                    },
-                    success:function (response){
-                       toastr.success('gui thanh cong')
-                    },
-                    error:function (jqXHR,textStatus,errThrown){
-
-                    }
+                },
+                error:function (data){
+                        sweetAlert("Oops...","Something went wrong !!","error")
                 }
-            )
+
+            });
+            $('input,textarea').val("");
 
         })
+
     })
-
-
+    // document.querySelector(".message").onclick=function(){swal("Hey, Good job !!","You clicked the button !!","success")}
 </script>
+
 {{--<!-- MDB core JavaScript -->--}}
 {{--<script type="text/javascript" src="{{asset('user_public/js/mdb.min.js')}}"></script>--}}
 {{--<!-- Initializations -->--}}

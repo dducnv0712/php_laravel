@@ -1,9 +1,9 @@
-@extends("layout");
+@extends("layout")
 @section("main")
 
 {{--bài thi--}}
     <div class="container">
-        <form action="{{url('/submit')}}" method="post">
+        <form>
             @csrf
         <div class="card">
 
@@ -14,30 +14,33 @@
             <div class="card-body">
                 <div class="mb-3">
                     <label for="name" class="fw-bolder col-form-label">Full Name:</label>
-                    <input type="text" value="" name="name" class="form-control" id="name" required>
+                    <input type="text" value="" name="name" class="form-control name" id="name" >
                 </div>
                 <div class="mb-3">
                     <label for="phone" class="fw-bolder col-form-label">Phone:</label>
-                    <input type="tel" value="" name="phone" class="form-control" id="phone" required>
+                    <input type="tel" value="" name="phone" class="form-control phone" id="phone">
                 </div>
                 <div class="mb-3">
                     <label for="email" class="fw-bolder col-form-label">Email:</label>
-                    <input type="email" value="" name="email" class="form-control" id="email" required>
+                    <input type="email" value="" name="email" class="form-control email" id="email">
                 </div>
                 <div class="mb-3">
                     <label for="feedback" class="fw-bolder col-form-label">Feedback:</label>
-                    <textarea type="text"  name="feedback" class="form-control" id="feedback" required></textarea>
+                    <textarea type="text"  name="feedback" class="form-control feedback" id="feedback" ></textarea>
                 </div>
             </div>
-            <div class="card-footer bg-transparent">
-                <button type="submit" id="submit" class="btn btn-success">Submit</button>
+            <div class="card-footer  bg-transparent">
+                <button type="button" id="submit" class="btn message btn-success">Submit</button>
             </div>
 
         </div>
         </form>
     </div>
 
+
+
 {{--.bài thi--}}
+
 
 
 
@@ -279,4 +282,7 @@
 {{--    </div>--}}
 {{--</main>--}}
 <!--Main layout-->
+
+
 @endsection
+
