@@ -29,6 +29,74 @@
                     <textarea type="text"  name="feedback" class="form-control feedback" id="feedback" ></textarea>
                 </div>
             </div>
+{{--            <div class="input-group mb-3">--}}
+{{--                <div class="input-group-prepend">--}}
+{{--                            <span class="input-group-text">--}}
+{{--                                <i class="fa fa-flag fa-fw"></i>--}}
+{{--                            </span>--}}
+{{--                </div>--}}
+{{--                <select class="custom-select{{ $errors->has('country_id') ? ' is-invalid' : '' }}" id="country_id" name="country_id">--}}
+{{--                    <option value="" selected>Choose country</option>--}}
+{{--                    @foreach($countries as $country)--}}
+{{--                        <option value="{{ $country->id }}">{{ $country->name }}</option>--}}
+{{--                    @endforeach--}}
+{{--                </select>--}}
+{{--                @if($errors->has('country_id'))--}}
+{{--                    <div class="invalid-feedback">--}}
+{{--                        {{ $errors->first('country_id') }}--}}
+{{--                    </div>--}}
+{{--                @endif--}}
+{{--            </div>--}}
+
+{{--            <div class="input-group mb-3" id="state" style="display:none">--}}
+{{--                <div class="input-group-prepend">--}}
+{{--                            <span class="input-group-text">--}}
+{{--                                <i class="fa fa-flag fa-fw"></i>--}}
+{{--                            </span>--}}
+{{--                </div>--}}
+{{--                <select class="custom-select{{ $errors->has('state_id') ? ' is-invalid' : '' }}" id="state_id" name="state_id">--}}
+{{--                    <option value="" selected>Choose state</option>--}}
+{{--                    @foreach($states as $state)--}}
+{{--                        <option value="{{ $state->id }}">{{ $state->name }}</option>--}}
+{{--                    @endforeach--}}
+{{--                </select>--}}
+{{--                @if($errors->has('state_id'))--}}
+{{--                    <div class="invalid-feedback">--}}
+{{--                        {{ $errors->first('state_id') }}--}}
+{{--                    </div>--}}
+{{--                @endif--}}
+{{--            </div>--}}
+
+{{--            <div class="input-group mb-3" id="city" style="display:none">--}}
+{{--                <div class="input-group-prepend">--}}
+{{--                            <span class="input-group-text">--}}
+{{--                                <i class="fa fa-building fa-fw"></i>--}}
+{{--                            </span>--}}
+{{--                </div>--}}
+{{--                <select class="custom-select{{ $errors->has('city_id') ? ' is-invalid' : '' }}" id="city_id" name="city_id">--}}
+{{--                    <option value="" selected>Choose city</option>--}}
+{{--                </select>--}}
+{{--                @if($errors->has('city_id'))--}}
+{{--                    <div class="invalid-feedback">--}}
+{{--                        {{ $errors->first('city_id') }}--}}
+{{--                    </div>--}}
+{{--                @endif--}}
+{{--            </div>--}}
+
+{{--            <div class="input-group mb-3" id="cityName" style="display:none">--}}
+{{--                <div class="input-group-prepend">--}}
+{{--                            <span class="input-group-text">--}}
+{{--                                <i class="fa fa-building fa-fw"></i>--}}
+{{--                            </span>--}}
+{{--                </div>--}}
+{{--                <input type="text" id="city_name" name="city_name" class="form-control{{ $errors->has('city_name') ? ' is-invalid' : '' }}" placeholder="City">--}}
+{{--                @if($errors->has('city_name'))--}}
+{{--                    <div class="invalid-feedback">--}}
+{{--                        {{ $errors->first('city_name') }}--}}
+{{--                    </div>--}}
+{{--                @endif--}}
+{{--            </div>--}}
+
             <div class="card-footer  bg-transparent">
                 <button type="button" id="submit" class="btn message btn-success">Submit</button>
             </div>

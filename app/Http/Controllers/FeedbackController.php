@@ -17,15 +17,15 @@ class FeedbackController extends Controller
     }
     public function feedback(Request $request)
     {
-
-
-                Feedback::create([
-                "name"=>$request->get("name"),
-                "phone"=>$request->get("phone"),
-                "email"=>$request->get("email"),
-                "feedback"=>$request->get("feedback")
-            ]);
-
+//
+//                Feedback::create([
+//                "name"=>$request->get("name"),
+//                "phone"=>$request->get("phone"),
+//                "email"=>$request->get("email"),
+//                "feedback"=>$request->get("feedback")
+//            ]);
+        $data = $request->all();
+        print_r($data);
 
 
     }

@@ -17,6 +17,7 @@ Route::get('/', [WebController::class, "home"]);
 Route::post('/submit',[FeedbackController::class, "feedback"]);
 Route::get('/fail', [WebController::class, "fail"]);
 Route::get('/success', [WebController::class, "success"]);
+Route::get('cities', 'CityController@index')->name('cities.index');
 //Route::get('/details/{id}', [WebController::class,"details"]);
 //Route::get('/about-us', [WebController::class, "about"]);
 //

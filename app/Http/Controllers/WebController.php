@@ -2,13 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Brand;
+
+
 use App\Models\City;
-use App\Models\Product;
 
-use Illuminate\Http\Request;
 
-use Illuminate\Support\Facades\Session;
+use App\Models\Country;
+use App\Models\State;
+
+
+
+
 
 class WebController extends Controller
 {
@@ -16,8 +20,12 @@ class WebController extends Controller
         return view("admin_views.home");
     }
     public function home(){
-
-        return view("home");
+        $country = Country::all();
+        $states = State::all();
+        return view("home",[
+            'countries' => $country,
+            'states' => $states
+        ]);
 
     }
     public function fail(){

@@ -2,18 +2,22 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+use App\State;
 use Illuminate\Database\Eloquent\Model;
 
 class City extends Model
 {
-    use HasFactory;
-    protected $table = "cities";
-
     protected $fillable = [
-        "city_name",
-        "sort",
-        "shipping_fee",
-        "number_free"
+        'state_id',
+        'name',
+        'county',
+        'latitude',
+        'longitude'
     ];
+
+    public function state()
+    {
+        return $this->belongsTo(State::class);
+    }
 }
